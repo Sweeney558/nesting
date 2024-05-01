@@ -110,7 +110,7 @@ for polygon in polygons:
     translated_polygons.append(translate(polygon, xoff=-bounds[0], yoff=-bounds[1]))
 
 if (sum(p.area for p in polygons) - union.area)<0:  
-    print("Poligoni se preklapaju")
+    print("Poligons are overlapping")
 
 # Priprema za plot   
 fig, ax = plt.subplots(figsize=(9, 9))
